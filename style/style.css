@@ -108,9 +108,27 @@ img{
 
 }
 
-section{
-    margin: 25px;
+section h6{
+    color: #ff4321;
+    font-size: 15px;
 }
+
+section h5{
+    color: #606163;
+    font-size: 17px;
+}
+section p{
+    color: #606163;
+    font-size: 12px;
+}
+
+.sections{
+    display: block;
+    padding: 12px 20px;
+    margin: 0;
+}
+
+
 
 
 #login, #register, #contact {
@@ -123,7 +141,7 @@ input, textarea {
     width: 100%;
     padding: 12px 20px;
     margin 8px 0;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 
@@ -142,3 +160,38 @@ input, textarea {
 .signin2:hover{
     color: #ff4321;
 }
+
+/* 
+footer {
+    position: absolute; 
+    left: 40%;  
+    top: -10%;
+} */
+
+
+/* footer {
+    display: block;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+   
+    text-align: center;
+  } */
+
+
+  footer {
+    text-align: center;
+    padding: 3px;
+   
+    
+  }
+
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
