@@ -68,7 +68,7 @@ nav ul li a:hover{
 }
 
 .btn{
-    color: var(--red);
+   background-color: var(--red);
     border-radius: 4px;
     padding: 10px 19px;
     text-decoration: none;
@@ -130,9 +130,25 @@ section p{
 
 .sections{
     display: block;
-    padding: 12px 20px;
-    margin: 0;
+    
+
 }
+
+.sec{
+    display: block;
+    padding: 12px 20px;
+    margin: 100;
+}
+
+.d-manager{
+    padding: 1px;
+}
+
+#responsibilities{
+    font-size: 10px;
+}
+
+
 
 
 
