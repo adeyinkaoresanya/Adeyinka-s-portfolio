@@ -1,5 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+:root {
+    --red: #ff4321;
+    --black: #606163;
+}
+
 body {
     font-family: 'Poppins';font-size: 15px;
 }
@@ -13,18 +19,18 @@ body {
 
 .logo {
     font-family: 'Poppins';font-size: 25px;
-    color: #ff4321;
+    color: var(--red);
     
 }
 
 label a{
     text-decoration: none;
-    color: #606163;
+    color: var(--black);
 }
 
 
 label a:hover{
-    color: #ff4321;
+    color: var(--red);
     
 }
 
@@ -54,15 +60,15 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #606163;
+    color: var(--black);;
 }
 
 nav ul li a:hover{
-    color: #ff4321;
+    color: var(--red);
 }
 
 .btn{
-    background: #ff4321;
+    color: var(--red);
     border-radius: 4px;
     padding: 10px 19px;
     text-decoration: none;
@@ -74,8 +80,8 @@ nav ul li a:hover{
 
 .btn:hover{
     background: transparent;
-    color: #ff4321;
-    border: 1px solid #ff4321;
+    color: var(--red);
+    border: 1px solid var(--red);
 }
 
 .info h1{
@@ -85,11 +91,11 @@ nav ul li a:hover{
 
 .info span{
     font-size: 40px;
-    color: #ff4321;
+    color: var(--red);
 }
 
 .info p{
-    color: #606163;
+    color: var(--black);;
     line-height: 22px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -109,16 +115,16 @@ img{
 }
 
 section h6{
-    color: #ff4321;
+    color: var(--red);
     font-size: 15px;
 }
 
 section h5{
-    color: #606163;
+    color: var(--black);
     font-size: 17px;
 }
 section p{
-    color: #606163;
+    color: var(--black);
     font-size: 12px;
 }
 
@@ -144,9 +150,25 @@ input, textarea {
     border-radius: 15px;
 }
 
+form.calc-1 {
+    width: 45%;
+    margin-left: 50px;
+}
+
+form table.calc-1 {
+    width: 60%;
+}
+
+#calc-1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin 8px 0;
+    border-radius: 4px;
+}
+
 
 #submit{
-    background: #ff4321;
+    background: var(--red);
     border-radius: 20px;
     padding: 10px 19px;
     text-decoration: none;
@@ -158,40 +180,97 @@ input, textarea {
 
 
 .signin2:hover{
-    color: #ff4321;
+    color: var(--red);
 }
 
-/* 
-footer {
-    position: absolute; 
-    left: 40%;  
-    top: -10%;
-} */
-
-
-/* footer {
-    display: block;
-    
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    
-   
-    text-align: center;
-  } */
-
-
-  footer {
-    text-align: center;
-    padding: 3px;
-   
-    
-  }
-
-
-  .flex-container {
+  
+.wrapper {
+    width: 40%;
+    margin: 4rem auto;
+    margin-left: 200px;
+    padding: 3 rem;
+    background-color: white;
     display: flex;
-    flex-direction: row;
-  }
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.wrapper div.calc {
+    height: 50px;
+    flex-basis: 20%;
+    margin: 10px;
+    background-color: gray;
+    color: #f8edd3;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper div.display{
+    height: 60px;
+    flex-basis: 100%;
+    margin: 10px;
+    background-color: gray;
+    color: #f8edd3;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer{
+    position: relative;
+    bottom: 100;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
   
-  
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2 rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--black);
+}
+.footer-content p a{
+    max-width: 500px;
+    margin: 5px auto;
+}
+
+
+.footer-content p a:hover{
+    color: var(--red);
+}
+
+
+.footer-bottom{
+    color: var(--black);
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+

@@ -17,6 +17,7 @@
                 <ul>
                     <li><a href="index.html">About Me</a></li>
                     <li><a href="./page2_basicCalculator.html">Basic Calculator</a></li>
+                    <li><a href="./page6_Flexboxcalculator.html">FlexBox Calculator</a></li>
                     <li><a href="./page3_logIn.html">LogIn</a></li>
                     <li><a href="./page4_register.html">Register</a></li>
                 </ul>
@@ -24,43 +25,43 @@
             </nav>
         </header>
     </div>
-    <form name="calc">
-    <table id="calc" border="2"> 
+    <form name="calc" class="calc-1">
+    <table id="calc" border="2" class="calc-1"> 
         <thead>
             <tr>
-            <td colspan="5"><input type="text" name="display" id="btn"></td>
+            <td colspan="5"><input type="text" name="display" id="calc-1"></td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><input type="button" name="parenthesis" id="btn" value="("></td>
-                <td><input type="button" name="parenthesis" id="btn" value=")"></td>
-                <td><input type="button" name="modulus" id="btn" value="%"></td>
-                <td><input type="button" name="clear" id="btn" value="CE"></td>
+                <td><input type="button" name="parenthesis" id="calc-1" value="("></td>
+                <td><input type="button" name="parenthesis" id="calc-1" value=")"></td>
+                <td><input type="button" name="modulus" id="calc-1" value="%"></td>
+                <td><input type="button" name="clear" id="calc-1" value="CE"></td>
             </tr>
             <tr>
-                <td><input type="button" name="seven" id="btn" value="7"></td>
-                <td><input type="button" name="eight" id="btn" value="8"></td>
-                <td><input type="button" name="nine" id="btn" value="9"></td>
-                <td><input type="button" name="divide" id="btn" value="/"></td>
+                <td><input type="button" name="seven" id="calc-1" value="7"></td>
+                <td><input type="button" name="eight" id="calc-1" value="8"></td>
+                <td><input type="button" name="nine" id="calc-1" value="9"></td>
+                <td><input type="button" name="divide" id="calc-1" value="/"></td>
             </tr>
             <tr>
-                <td><input type="button" name="four" id="btn" value="4"></td>
-                <td><input type="button" name="five" id="btn" value="5"></td>
-                <td><input type="button" name="six" id="btn" value="6"></td>
-                <td><input type="button" name="multiply" id="btn" value="x"></td>
+                <td><input type="button" name="four" id="calc-1" value="4"></td>
+                <td><input type="button" name="five" id="calc-1" value="5"></td>
+                <td><input type="button" name="six" id="calc-1" value="6"></td>
+                <td><input type="button" name="multiply" id="calc-1" value="x"></td>
             </tr>
             <tr>
-                <td><input type="button" name="one" id="btn" value="1"></td>
-                <td><input type="button" name="two" id="btn" value="2"></td>
-                <td><input type="button" name="three" id="btn" value="3"></td>
-                <td><input type="button" name="minus" id="btn" value="-"></td>
+                <td><input type="button" name="one" id="calc-1" value="1"></td>
+                <td><input type="button" name="two" id="calc-1" value="2"></td>
+                <td><input type="button" name="three" id="calc-1" value="3"></td>
+                <td><input type="button" name="minus" id="calc-1" value="-"></td>
             </tr>
             <tr>
-                <td><input type="button" name="zero" id="btn" value="0"></td>
-                <td><input type="button" name="period" id="btn" value="."></td>
-                <td><input type="button" name="equal" id="btn" value="="></td>
-                <td><input type="button" name="plus" id="btn" value="+"></td>
+                <td><input type="button" name="zero" id="calc-1" value="0"></td>
+                <td><input type="button" name="period" id="calc-1" value="."></td>
+                <td><input type="button" name="equal" id="calc-1" value="="></td>
+                <td><input type="button" name="plus" id="calc-1" value="+"></td>
             </tr>
         </tbody>
     </table>
@@ -71,8 +72,16 @@
 
 
 <footer>
-    <p>Need data analytics Solutions?</p>
-    <p><a href="page5_contact.html">Contact me</a></p>
+    <div class="footer-content">
+        <h3>Need data analytics solutions?</h3>
+        <p><a href="page5_contact.html">Contact me</a></p>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy; 2022, Adeyinka J. Oresanya| Private Policy.  </p>
+        <p>All rights reserved  </p>
+                 
+    </div>
+
 </footer>
 </body>
 </html>
