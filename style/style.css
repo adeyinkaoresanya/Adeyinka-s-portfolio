@@ -113,10 +113,27 @@ img{
     
 
 }
+.intro, li{
+    font-size: 16px;
+}
 
-section h6{
+.education h5, .education h6, .work h5, .work h6, .work ul{
+    margin: 0;
+            }
+
+ .education, .work{
+     padding: 20px 0;
+         }
+
+
+section .date, .work h6{
     color: var(--red);
     font-size: 15px;
+}
+
+section h6{
+    font-size: 15px;
+    color: var(--black);
 }
 
 section h5{
